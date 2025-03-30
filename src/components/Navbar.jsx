@@ -25,7 +25,7 @@ const Navbar = () => {
               <a href="#contact">Contact Me</a>
           </div>
           <div className="other_links">
-            <Btn content="Book Now" />
+            <Btn content="Book Now" width={'w-full'} />
             <SocialMediaIcons />
           </div>
         </div>
