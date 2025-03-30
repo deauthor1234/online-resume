@@ -46,6 +46,19 @@ nav .navbar {
   padding: 1rem;
 }
 
+nav .navbar .logo {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.navbar .logo span {
+  color: var(--accent-color);
+}
+
 nav .navlinks {
   display: flex;
   flex-direction: column;

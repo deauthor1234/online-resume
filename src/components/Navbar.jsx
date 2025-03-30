@@ -15,6 +15,7 @@ const Navbar = () => {
   return (
     <nav style={{minWidth: `${navWidth}`}}>
         <div className="navbar" style={{minWidth: `${navbarWidth}`}}>
+          <p className="logo">Royal<span>Art</span></p>
           <div className="navlinks">
               <a href="#intro">Intro</a> 
               <a href="#services">My Services</a>
