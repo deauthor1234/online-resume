@@ -123,8 +123,8 @@ nav .other_links .social_m_ic {
 
 nav .social_m_ic .ic,
 nav .social_m_ic .ic:nth-child(even):hover {
-  width: max-content;
-  height: max-content;
+  width: 100%;
+  height: 100%;
   font-size: 1.2rem;
   color: var(--text-color);
   cursor: pointer;
@@ -283,4 +283,47 @@ section {
 .img_link {
   opacity: 1;
   pointer-events: unset;
+}
+
+#experience .exp_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#experience .exp {
+  display: flex;
+  gap: 3.5rem;
+}
+
+#experience .exp .exp_des {
+  padding: 0 0 2rem 0;
+}
+
+#experience .exp span {
+  font-weight: 600;
+}
+
+#experience .exp .exp_diag {
+  display: flex;
+  gap: 2rem;
+  color: var(--accent-color);
+}
+
+#experience .exp_diag .diag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#experience .diag .circle {
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+}
+
+#experience .diag .line {
+  background: var(--accent-color);
+  width: 3px;
+  height: 100%;
 }
