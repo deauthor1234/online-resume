@@ -14,8 +14,8 @@ const Works = () => {
             <div className="container">
                 <p className="heading">My Works</p>
                 <div className="works_grid">
-                    {pics.map((picture) => (
-                        <WorkCard pic={picture} />
+                    {pics.map((picture, index) => (
+                        <WorkCard pic={picture} key={index} />
                     ))}
                 </div>
             </div>    
