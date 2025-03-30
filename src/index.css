@@ -57,6 +57,7 @@ nav .navbar .logo {
 
 .navbar .logo span {
   color: var(--accent-color);
+  text-shadow: 0 5px 2px #c593609d;
 }
 
 nav .navlinks {
@@ -74,6 +75,7 @@ nav .navlinks a {
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
   text-align: center;
+  transition: 0.1s ease;
 }
 
 nav .navlinks a:nth-child(odd) {
@@ -96,7 +98,7 @@ nav .other_links {
   gap: 1.5rem;
 }
 
-nav .other_links .book_btn {
+nav .other_links .btn {
   background: var(--accent-color);
   color: #000;
   padding: 0.5rem 0;
@@ -109,8 +111,9 @@ nav .other_links .book_btn {
   text-decoration: none;
 }
 
-nav .other_links .book_btn:hover {
+nav .other_links .btn:hover {
   transform: rotateZ(2deg);
+  box-shadow: 0 0 15px 0 #c593609d;
 }
 
 nav .other_links .social_m_ic {
@@ -260,7 +263,7 @@ section {
   height: 100%;
   object-fit: cover;
   object-position: top;
-  transition: 0.3s;
+  transition: 0.3s ease-in;
 }
 
 #works .work .img_link {

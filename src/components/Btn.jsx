@@ -1,5 +1,5 @@
 const Btn = ({ content }) => {
-  return <a href='#contact' className="book_btn">{content}</a>
+  return <a href='#contact' className="btn">{content}</a>
 }
 
 export default Btn
