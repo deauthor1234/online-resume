@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav style={{minWidth: `${navWidth}`}}>
-        <div className="navbar" style={{minWidth: `${navbarWidth}`}}>
+        <div className="navbar" style={{minWidth: `${navbarWidth}`}} data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="400">
           <p className="logo">Royal<span>Art</span></p>
           <div className="navlinks">
               <a href="#intro">Intro</a> 

@@ -24,6 +24,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   font-size: 1rem;
+  overflow-x: hidden;
 }
 
 #root {
@@ -34,7 +35,6 @@ nav {
   position: relative;
   width: fit-content;
   z-index: 1000;
-  background: var(--accent-color);
 }
 
 nav .navbar {

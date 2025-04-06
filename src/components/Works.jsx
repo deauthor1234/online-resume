@@ -10,7 +10,7 @@ const Works = () => {
     const pics = [pic1, pic2, pic3, pic4, pic5, pic6];
 
     return (
-        <section id="works">
+        <section id="works" data-aos="fade-up">
             <div className="container">
                 <p className="heading">My Works</p>
                 <div className="works_grid">
