@@ -12,17 +12,17 @@ const Services = () => {
                title={'Graphic Design'} 
                description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit possimus a porro consectetur reiciendis explicabo!'} 
                />
-               <ServiceCard 
+               <ServiceCard aosDelay={"200"}
                icon={<GiPhotoCamera className='service_ic' />} 
                title={'Photography'} 
                description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit possimus a porro consectetur reiciendis explicabo!'} 
                />
-               <ServiceCard 
+               <ServiceCard aosDelay={"400"}
                icon={<GiPaintBrush className='service_ic' />} 
                title={'Photo Retouch'} 
                description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit possimus a porro consectetur reiciendis explicabo!'} 
                />
-               <ServiceCard 
+               <ServiceCard aosDelay={"600"}
                icon={<GiFilmProjector className='service_ic' />} 
                title={'Video Coverage'} 
                description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit possimus a porro consectetur reiciendis explicabo!'} 
