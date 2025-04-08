@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <section id="services">
         <div className="container">
-            <Heading headingTxt={"Services"} animName={"fade-left"} />
+            <Heading headingTxt={"Services"} />
             <div className="services_grid">
                <ServiceCard 
                icon={<GiCube className='service_ic' />} 
@@ -23,7 +23,7 @@ const Services = () => {
                title={'Photo Retouch'} 
                description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit possimus a porro consectetur reiciendis explicabo!'} 
                />
-               <ServiceCard aosDelay={"400"}
+               <ServiceCard aosDelay={"100"}
                icon={<GiFilmProjector className='service_ic' />} 
                title={'Video Coverage'} 
                description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit possimus a porro consectetur reiciendis explicabo!'} 

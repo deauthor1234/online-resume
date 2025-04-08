@@ -2,7 +2,7 @@ import { BsCircle } from 'react-icons/bs';
 
 const ExpSectionDiag = ({ year, lineCont }) => {
   return (
-    <div className='exp_diag'>
+    <div className='exp_diag' data-aos="fade-out">
         <p><span>{year}</span></p>
         <div className="diag">
             <BsCircle className='circle' />
