@@ -1,11 +1,12 @@
 import ServiceCard from "./ServiceCard"
+import Heading from "./Heading"
 import { GiCube, GiFilmProjector, GiPaintBrush, GiPhotoCamera } from 'react-icons/gi';
 
 const Services = () => {
   return (
     <section id="services">
         <div className="container">
-            <p className="heading">Services</p>
+            <Heading headingTxt={"Services"} animName={"fade-left"} />
             <div className="services_grid">
                <ServiceCard 
                icon={<GiCube className='service_ic' />} 

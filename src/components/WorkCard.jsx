@@ -1,8 +1,8 @@
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
-const WorkCard = ({ pic }) => {
+const WorkCard = ({ pic, index }) => {
   return (
-    <div className="work">
+    <div className="work" data-aos="zoom-in" data-aos-delay={`${index}00`}>
         <img className='work_img' src={pic} />
         <a href={pic} className='img_link'><FaExternalLinkAlt className='work_ic' /></a>
     </div>

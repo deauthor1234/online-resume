@@ -9,7 +9,7 @@ const App = () => {
     Aos.init({
       once: false,
       disable: "phone",
-      duration: 700,
+      duration: 500,
       easing: "ease-out-cubic",
       mirror: true
     })
