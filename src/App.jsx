@@ -7,11 +7,11 @@ import { useEffect } from "react"
 const App = () => {
   useEffect(() => {
     Aos.init({
-      once: "false",
+      once: false,
       disable: "phone",
       duration: 700,
       easing: "ease-out-cubic",
-      mirror: "true"
+      mirror: true
     })
   }, []);
 

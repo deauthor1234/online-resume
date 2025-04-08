@@ -22,7 +22,7 @@ const Services = () => {
                title={'Photo Retouch'} 
                description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit possimus a porro consectetur reiciendis explicabo!'} 
                />
-               <ServiceCard aosDelay={"600"}
+               <ServiceCard aosDelay={"400"}
                icon={<GiFilmProjector className='service_ic' />} 
                title={'Video Coverage'} 
                description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit possimus a porro consectetur reiciendis explicabo!'} 
