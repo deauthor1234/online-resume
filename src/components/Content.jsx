@@ -1,3 +1,4 @@
+import Contact from "./Contact"
 import Experience from "./Experience"
 import Hero from "./Hero"
 import Services from "./Services"
@@ -12,6 +13,7 @@ const Content = () => {
         <Works />
         <Experience />
         <Skills />
+        <Contact />
     </main>
   )
 }

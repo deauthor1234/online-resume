@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="container">
             <div className="content">
                 <div className="profile_img_wrapper">
-                  <img className="profile_img" src={profile} alt="profile" data-aos="fade-up" />
+                  <img className="profile_img" src={profile} alt="profile_img" data-aos="zoom-in" />
                 </div>
                 <div className="text">
                   <p className="my_name" data-aos="fade-right">Oladapo Royal</p>

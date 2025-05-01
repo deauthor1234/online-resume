@@ -6,7 +6,10 @@ const Skills = () => {
             <div className="container">
                 <p className="heading">Skills</p>
                 <div className="skills_wrapper">
-                    <Skill />
+                    <Skill value={"85%"} title={"Graphics Design"} />
+                    <Skill value={"90%"} title={"Photography"} />
+                    <Skill value={"95%"} title={"Photo Retouch"} />
+                    <Skill value={"70%"} title={"Videography"} />
                 </div>
             </div>
         </section>
