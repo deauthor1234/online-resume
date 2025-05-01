@@ -49,8 +49,24 @@ nav .navbar {
 }
 
 nav .navbar #menuIcon {
-  font-size: 1.5rem;
   display: none;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.4rem;
+  border-radius: 50%;
+  background: var(--gray-color);
+  margin: 1rem;
+  color: var(--accent-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+nav .navbar #menuIcon:hover {
+  background: #44404e;
 }
 
 nav .navbar .logo {
@@ -466,16 +482,38 @@ section {
 @media (max-width: 1024px) {
   nav .navbar #menuIcon {
     display: unset;
-    margin: 0 0 1rem 0;
-    color: var(--accent-color);
+    z-index: 100;
+  }
+
+  nav.show .navbar #menuIcon {
+    font-size: 1.5rem;
+    width: max-content;
+    height: max-content;
+    padding: 0;
+    background: #0000;
+    margin: 0.5rem;
   }
 
   nav .navbar .navbar_content  {
     opacity: 0;
     pointer-events: none;
+    transition: 0.3s;
+    padding-top: 2rem;
   }
 
+  nav.show .navbar .navbar_content  {
+    opacity: 1;
+    pointer-events: unset;
+  }
+
+  nav,
   nav .navbar {
-    min-width: 3rem;
+    margin-left: -8.5rem;
+    transition: 0.4s;
+  }
+
+  nav.show,
+  nav.show .navbar {
+    margin-left: 0;
   }
 }
