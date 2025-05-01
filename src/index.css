@@ -486,12 +486,12 @@ section {
   }
 
   nav.show .navbar #menuIcon {
-    font-size: 1.5rem;
-    width: max-content;
-    height: max-content;
-    padding: 0;
-    background: #0000;
-    margin: 0.5rem;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.1rem;
+    border-radius: 0;
+    margin: 0;
   }
 
   nav .navbar .navbar_content  {
@@ -506,6 +506,10 @@ section {
     pointer-events: unset;
   }
 
+  nav .navbar {
+    border-right: 1px solid var(--gray-color);
+  }
+
   nav,
   nav .navbar {
     margin-left: -8.5rem;
@@ -515,5 +519,33 @@ section {
   nav.show,
   nav.show .navbar {
     margin-left: 0;
+  }
+
+  #services .services_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #works .works_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #skills .skills_wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  #skills .skill {
+    background: var(--main-color);
+    padding: 1rem;
+  }
+
+  #contact .container {
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+
+  #contact .container form {
+    margin: 0 auto;
+    width: 100%;
   }
 }

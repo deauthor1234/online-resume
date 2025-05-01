@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className={navShow && "show"} style={{minWidth: `${navWidth}`}}>
         <div className="navbar" style={{minWidth: `${navbarWidth}`}}>
-          {!navShow ? <BsList id='menuIcon' onClick={handleClick} /> : <BsX id='menuIcon' className='x' onClick={handleClick} />}
+          {!navShow ? <BsList id='menuIcon' onClick={handleClick} /> : <BsX id='menuIcon' onClick={handleClick} />}
           <div className="navbar_content">
             <p className="logo" data-aos="fade-down">Royal<span>Art</span></p>
             <div className="navlinks" data-aos="fade-right">
