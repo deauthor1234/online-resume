@@ -6,7 +6,7 @@ A responsive online résumé website built with HTML, CSS, and JavaScript, showc
 
 ## 📸 Preview
 
-![Preview](./Preview.png)  
+![Preview](./Preview.jpeg)  
 
 ---
 
