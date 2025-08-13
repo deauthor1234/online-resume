@@ -13,7 +13,7 @@
   --accent-color: #c59360;
   --bg-color: #1b1926;
   --gray-color: #302d3b;
-  --text-color: #c0c0c0; 
+  --text-color: #c0c0c0;
 }
 
 @font-face {
@@ -166,6 +166,11 @@ nav .social_m_ic .ic:nth-child(even) {
 
 main {
   width: 100%;
+  position: relative;
+}
+
+main .overlay {
+  display: 0;
 }
 
 section {
@@ -266,6 +271,25 @@ section {
   margin: 2rem 0 1rem;
 }
 
+#works .work_grid_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.3rem;
+}
+
+#works .work_grid_wrapper .work_division {
+  font-size: 1.13rem;
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  background: var(--main-color);
+  width: fit-content;
+  border-left: 1px solid var(--accent-color);
+}
+
+#works .work_grid_wrapper .work_division.spaced {
+  margin: 2.5rem 0 0 0;
+}
+
 #works .works_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -309,6 +333,32 @@ section {
 .img_link {
   opacity: 1;
   pointer-events: unset;
+}
+
+#works .view_more_wrapper {
+  margin: 3rem 0 0 0;
+}
+
+#works .view_more_wrapper .view_more {
+  background: var(--accent-color);
+  color: var(--main-color);
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  width: fit-content;
+  text-decoration: none;
+  transition: 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#works .view_more .view_more_ic {
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+
+.view_more_wrapper .view_more:hover .view_more_ic {
+  translate: 4px 0;
 }
 
 #experience .exp_wrapper {
@@ -449,6 +499,7 @@ section {
 
 #contact form input,
 #contact form textarea {
+  width: 100%;
   background: transparent;
   border: 0;
   border-bottom: 2px solid #fff;
@@ -486,19 +537,20 @@ section {
   }
 
   nav.show .navbar #menuIcon {
-    font-size: 2rem;
-    width: 2rem;
-    height: 2rem;
-    padding: 0.1rem;
+    font-size: 1.7rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem 0;
     border-radius: 0;
-    margin: 0;
+    margin: 0 -1.7rem 0 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   nav .navbar .navbar_content  {
     opacity: 0;
     pointer-events: none;
     transition: 0.3s;
-    padding-top: 2rem;
   }
 
   nav.show .navbar .navbar_content  {
@@ -539,6 +591,10 @@ section {
     padding: 1rem;
   }
 
+  #skills .skill .skill_value {
+    font-size: 1.5rem;
+  }
+
   #contact .container {
     flex-direction: column;
     row-gap: 5rem;
@@ -547,5 +603,152 @@ section {
   #contact .container form {
     margin: 0 auto;
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero .profile_img_wrapper {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  #hero .text .my_name {
+    font-size: 3rem;
+  }
+
+  #hero .text .doc_info {
+    font-size: 1.3rem;
+  }
+
+  #services .services_grid {
+    grid-template-columns: 1fr;
+  }
+
+  #works .works_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  #hero .text .my_name {
+    font-size: 2.7rem;
+  }
+
+  #experience .exp span.accent {
+    display: none;
+  }
+
+  #experience .exp {
+    gap: 2rem;
+  }
+
+  #experience .exp .exp_diag {
+    gap: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  nav,
+  nav .navbar {
+    margin-left: -10rem;
+    transition: 0.4s;
+  }
+
+  nav.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  nav.show .navbar {
+    position: unset;
+  }
+
+  nav .navbar #menuIcon {
+    font-size: 1.8rem;
+    margin: 1rem 0.15rem;
+    width: auto;
+    height: auto;
+    background: #0000;
+  }
+
+  nav.show .navbar #menuIcon {
+    background: var(--gray-color);
+  }
+
+  .container {
+    padding: 6rem 1.5rem 2rem;
+  }
+
+  #contact .container form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 4rem 1.5rem 2rem;
+  }
+
+  #hero .text .my_name {
+    font-size: 2.1rem;
+  }
+
+  #hero .text .doc_info {
+    font-size: 1.2rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  #services .services_grid {
+    gap: 3rem;
+  }
+
+  #services .service .service_name {
+    margin: 1rem 0 1rem;
+  }
+
+  #skills .skills_wrapper {
+    row-gap: 2rem;
+  }
+
+  #skills .skill {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #skills .skill .first_section {
+    column-gap: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 4rem 1rem 2rem;
+  }
+
+  nav .navlinks a {
+    padding: 0.4rem 0;
+  }
+
+  #experience .exp {
+    gap: 1rem;
+  }
+
+  #works .works_grid .work {
+    height: 17rem;
+  }
+
+  #skills .skill {
+    background: #0000;
+    padding: 0;
+  }
+  
+  #contact form {
+    padding: 1.5rem;
   }
 }

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import SocialMediaIcons from './SocialMediaIcons';
 import Btn from './Btn';
-import { BsList, BsX } from 'react-icons/bs';
+import { BsChevronCompactLeft, BsList, BsX } from 'react-icons/bs';
 
 const Navbar = () => {
   // Getting the nav and navbar min-width values
@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className={navShow && "show"} style={{minWidth: `${navWidth}`}}>
         <div className="navbar" style={{minWidth: `${navbarWidth}`}}>
-          {!navShow ? <BsList id='menuIcon' onClick={handleClick} /> : <BsX id='menuIcon' onClick={handleClick} />}
+          {!navShow ? <BsList id='menuIcon' onClick={handleClick} /> : <BsChevronCompactLeft id='menuIcon' onClick={handleClick} />}
           <div className="navbar_content">
             <p className="logo" data-aos="fade-down">Royal<span>Art</span></p>
             <div className="navlinks" data-aos="fade-right">
